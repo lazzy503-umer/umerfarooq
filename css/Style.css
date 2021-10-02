@@ -1,0 +1,133 @@
+/*@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');*/
+
+@import url('font.css');
+
+@-moz-keyframes blink {
+    from {
+        opacity: 1;
+
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+html, body, h1, h2 {
+    margin: 0;
+}
+
+body {
+    background: #000;
+    color: #00ff00;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+header{
+
+
+}
+.redAlert, #ddd {
+    color: red;
+    text-shadow: 0 0 10px #fc0c0c;
+}
+
+#blockReason {
+
+    margin: 10px 0 0 0;
+
+}
+
+canvas {
+    display: block;
+    background: #000;
+}
+
+div#overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+
+}
+
+div#overlay > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../img/pattern.png");
+}
+
+div#overlay > header {
+    text-transform: uppercase;
+    width: 600px;
+    margin: 0 auto;
+    /*text-shadow: 0 0 10px #0a0;*/
+    opacity: 0;
+    position: relative;
+    top: 30px;
+    color: #00aa00;
+}
+
+div#overlay > header > h1 {
+    font: normal 67px Share-TechMono;
+    background: rgba(0, 0, 0, .75);
+    box-shadow: 0 0 50px 30px rgba(0, 0, 0, .75);
+    border-radius: 10px;
+    letter-spacing: -5px;
+}
+
+div#overlay > header > h1:after {
+    content: '|';
+    -moz-animation: blink .2s linear infinite alternate-reverse;
+    -o-animation: blink .2s linear infinite alternate-reverse;
+    -webkit-animation: blink .2s linear infinite alternate-reverse;
+    animation: blink .2s linear infinite alternate-reverse;
+}
+
+div#overlay > header > h2 {
+    font: normal 20px Share-TechMono;
+    background: rgba(0, 0, 0, .75);
+    letter-spacing: -1px;
+    box-shadow: 0 0 50px 30px rgba(0, 0, 0, .75);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    div#overlay > header {
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    div#overlay > header > h1 {
+        font-size: 41px;
+        letter-spacing: -3px;
+    }
+
+    div#overlay > header > h2 {
+        font-size: 13px;
+    }
+}
+
+

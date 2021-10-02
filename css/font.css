@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Share Tech Mono';
+    src: url('fonts/sharetechmono-regular.eot');
+    src: url('fonts/sharetechmono-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sharetechmono-regular.woff2') format('woff2'),
+         url('fonts/sharetechmono-regular.woff') format('woff'),
+         url('fonts/sharetechmono-regular.ttf')  format('truetype'),
+         url('fonts/sharetechmono-regular.svg#Share Tech Mono') format('svg');
+}
